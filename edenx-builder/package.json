@@ -1,0 +1,54 @@
+{
+  "name": "edenx-builder",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "node ./scripts/dist/dev.js",
+    "dev:babel": "BABEL=true node ./scripts/dist/dev.js",
+    "build": "time node ./scripts/dist/build.js",
+    "build:babel": "time BABEL=true node ./scripts/dist/build.js",
+    "inspect": "node ./scripts/dist/inspect.js",
+    "prepare": "tsc -p ./tsconfig.scripts.json"
+  },
+  "packageManager": "pnpm@7.12.2",
+  "dependencies": {
+    "@antv/data-set": "^0.11.8",
+    "@arco-design/color": "^0.4.0",
+    "@arco-design/web-react": "^2.29.1",
+    "@arco-themes/react-arco-pro": "^0.0.7",
+    "@loadable/component": "^5.15.2",
+    "@turf/turf": "^6.5.0",
+    "arco-design-pro": "^2.3.0",
+    "axios": "^0.24.0",
+    "bizcharts": "^4.1.15",
+    "classnames": "^2.3.1",
+    "copy-to-clipboard": "^3.3.1",
+    "dayjs": "^1.10.7",
+    "lodash": "^4.17.21",
+    "mockjs": "^1.1.0",
+    "nprogress": "^0.2.0",
+    "query-string": "^6.14.1",
+    "react": "^17.0.2",
+    "react-color": "^2.19.3",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router": "^5.2.1",
+    "react-router-dom": "^5.3.0",
+    "redux": "^4.1.2"
+  },
+  "devDependencies": {
+    "@modern-js/builder": "2.1.0",
+    "@modern-js/builder-webpack-provider": "2.1.0",
+    "@modern-js/builder-plugin-swc": "2.1.0",
+    "@modern-js/tsconfig": "2.1.0",
+    "@types/node": "^14",
+    "@types/react": "^17",
+    "@types/react-dom": "^17",
+    "execa": "^5",
+    "typescript": "^4"
+  },
+  "browserslist": [
+    "> 0.01%",
+    "not dead",
+    "not op_mini all"
+  ]
+}

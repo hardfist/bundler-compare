@@ -1,0 +1,10 @@
+packages:
+ - 'edenx'
+ - 'edenx-builder'
+ - 'edenx-rspack-builder'
+ - 'create-react-app'
+ - 'eden-v2'
+ - 'jupiter-v5'
+ - 'next.js'
+ - 'rspack'
+ - 'vite'

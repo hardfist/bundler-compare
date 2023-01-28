@@ -1,0 +1,35 @@
+{
+  "name": "root",
+  "private": "true",
+  "packageManager": "pnpm@7.12.2",
+  "scripts": {
+    "clean": "rm -rf **/node_modules/.cache && rm -rf **/node_modules/.vite && rm -rf **/.next && rm -rf **/dist && rm -rf **/.temp",
+    "dev:create-react-app": "pnpm --filter create-react-app dev",
+    "dev:edenx": "pnpm --filter edenx dev",
+    "dev:edenx:babel": "pnpm --filter edenx dev:babel",
+    "dev:edenx-builder": "pnpm --filter edenx-builder dev",
+    "dev:edenx-builder:babel": "pnpm --filter edenx-builder dev:babel",
+    "dev:edenx-rspack-builder": "pnpm --filter edenx-rspack-builder dev",
+    "dev:eden-v2": "pnpm --filter eden-v2 dev",
+    "dev:jupiter-v5": "pnpm --filter jupiter-v5 dev",
+    "dev:next.js": "pnpm --filter next.js dev",
+    "dev:rspack": "pnpm --filter rspack dev",
+    "dev:vite": "pnpm --filter vite dev",
+    "build:create-react-app": "pnpm --filter create-react-app build",
+    "build:edenx": "pnpm --filter edenx build",
+    "build:edenx:babel": "pnpm --filter edenx build:babel",
+    "build:edenx-builder": "pnpm --filter edenx-builder build",
+    "build:edenx-builder:babel": "pnpm --filter edenx-builder build:babel",
+    "build:edenx-rspack-builder": "pnpm --filter edenx-rspack-builder build",
+    "build:eden-v2": "pnpm --filter eden-v2 build",
+    "build:jupiter-v5": "pnpm --filter jupiter-v5 build",
+    "build:next.js": "pnpm --filter next.js build",
+    "build:rspack": "pnpm --filter rspack build",
+    "build:vite": "pnpm --filter vite build"
+  },
+  "pnpm": {
+    "overrides": {
+      "d3-color": "^2"
+    }
+  }
+}

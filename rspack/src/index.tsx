@@ -1,4 +1,7 @@
 import './style/global.less'
+import './style.scss';
+import style from './button.module.scss';
+console.log('style:',style);
 import { ConfigProvider } from '@arco-design/web-react'
 import enUS from '@arco-design/web-react/es/locale/en-US'
 import zhCN from '@arco-design/web-react/es/locale/zh-CN'

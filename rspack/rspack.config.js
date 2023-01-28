@@ -50,11 +50,27 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.scss$/, use: [
+          {
+            builtinLoader: 'sass-loader' // use rust loader
+          }
+        ],
+        type: 'css'
+      },
+      {
+        test: /\.module\.scss$/, use: [
+          {
+            builtinLoader: 'sass-loader'
+          },
+        ],
+        type: 'css/module'
+      },
       { test: /\.less$/, use: [{ loader: require.resolve('less-loader') }], type: 'css' },
       {
         test: /module\.less$/,
         use: [{ loader: require.resolve('less-loader') }],
-        type: 'css/module',
+        type: 'css/module', // native css module
       },
       { test: /\.svg$/, use: [{ loader: svgLoader }], type: 'jsx' },
     ],

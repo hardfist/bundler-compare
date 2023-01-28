@@ -1,4 +1,5 @@
 const path = require('path');
+const htmlPlugin = require('@rspack/plugin-html').default;
 const { transform } = require('@svgr/core');
 
 async function svgLoader(content) {
@@ -32,14 +33,18 @@ module.exports = {
   devServer: {
     port: 5555,
   },
+  plugins: [new htmlPlugin({
+    template: './index.html',
+    publicPath: '/'
+  })], // use js html-plugin here, or use rust html-plugin below
   builtins: {
     minify: isProd,
-    html: [
-      {
-        template: './index.html',
-        publicPath: '/',
-      },
-    ],
+    // html: [
+    //   {
+    //     template: './index.html',
+    //     publicPath: '/',
+    //   },
+    // ], // you can use js html-plugin or rust html-plugin
     progress: {},
     define: { 'process.env.NODE_ENV': JSON.stringify(mode) },
   },

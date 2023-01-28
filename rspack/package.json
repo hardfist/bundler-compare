@@ -36,6 +36,7 @@
   },
   "devDependencies": {
     "@rspack/cli": "0.0.0-20230125140748",
+    "@rspack/plugin-html": "0.0.0-20221227070929",
     "typescript": "^4.5.5",
     "@svgr/core": "6.5.1",
     "postcss": "8.4.18",

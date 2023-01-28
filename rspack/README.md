@@ -11,3 +11,6 @@ npm run dev
 
 // 构建
 npm run build
+
+// 包分析
+npm run analyze

@@ -1,5 +1,6 @@
 import './style/global.less'
 import './style.scss';
+import { css } from '@emotion/react';
 import style from './button.module.scss';
 console.log('style:',style);
 import { ConfigProvider } from '@arco-design/web-react'
@@ -20,7 +21,6 @@ import rootReducer from './store'
 import changeTheme from './utils/changeTheme'
 import checkLogin from './utils/checkLogin'
 import useStorage from './utils/useStorage'
-
 const store = createStore(rootReducer)
 
 function Index() {
@@ -67,6 +67,9 @@ function Index() {
   }
 
   return (
+    <div className='root' css={css`
+      background-color: hotpink;
+    `}>
     <BrowserRouter>
     <Suspense fallback={<div>loading....</div>}>
       <ConfigProvider
@@ -94,6 +97,7 @@ function Index() {
       </ConfigProvider>
       </Suspense>
     </BrowserRouter>
+    </div>
   )
 }
 

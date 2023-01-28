@@ -47,6 +47,10 @@ module.exports = {
     // ], // you can use js html-plugin or rust html-plugin
     progress: {},
     define: { 'process.env.NODE_ENV': JSON.stringify(mode) },
+    react: {
+      importSource: '@emotion/react', // supports emotion css props
+      runtime: 'automatic'
+    },
   },
   module: {
     rules: [

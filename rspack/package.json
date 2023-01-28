@@ -35,6 +35,7 @@
     "regenerator-runtime": "0.13.9"
   },
   "devDependencies": {
+    "@emotion/react": "11.10.5",
     "@rspack/cli": "0.0.0-20230125140748",
     "@rspack/plugin-html": "0.0.0-20221227070929",
     "typescript": "^4.5.5",

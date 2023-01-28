@@ -67,9 +67,11 @@ function Index() {
   }
 
   return (
-    <div className='root' css={css`
+    
+    <div className='root'  css={css`
       background-color: hotpink;
     `}>
+    <div className={style.root}></div>
     <BrowserRouter>
     <Suspense fallback={<div>loading....</div>}>
       <ConfigProvider

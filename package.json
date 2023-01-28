@@ -29,7 +29,11 @@
   },
   "pnpm": {
     "overrides": {
-      "d3-color": "^2"
+      "d3-color": "^2",
+      "@rspack/core": "0.0.0-23f43ba4d8-20230105084939",
+      "@rspack/binding-darwin-arm64": "0.0.0-23f43ba4d8-20230105084939",
+      "@rspack/binding-darwin-x64": "0.0.0-23f43ba4d8-20230105084939",
+      "@rspack/binding-linux-x64-gnu": "0.0.0-23f43ba4d8-20230105084939"
     }
   }
 }

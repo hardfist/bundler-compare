@@ -2,11 +2,8 @@
 
 The is a playground to compare the build performance of some build tools, including:
 
-- edenx
 - edenx-builder (with webpack provider)
 - edenx-rspack-builder (with rspack provider)
-- eden-v2
-- jupiter-v5
 - create-react-app
 - next.js
 - rspack

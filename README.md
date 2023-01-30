@@ -22,22 +22,16 @@ pnpm clean
 
 # run dev
 pnpm dev:create-react-app
-pnpm dev:eden-v2
-pnpm dev:jupiter-v5
 pnpm dev:next.js
 pnpm dev:rspack
-pnpm dev:edenx
 pnpm dev:edenx-builder
 pnpm dev:edenx-rspack-builder
 pnpm dev:vite
 
 # run build
 pnpm build:create-react-app
-pnpm build:eden-v2
-pnpm build:jupiter-v5
 pnpm build:next.js
 pnpm build:rspack
-pnpm build:edenx
 pnpm build:edenx-builder
 pnpm build:edenx-rspack-builder
 pnpm build:vite

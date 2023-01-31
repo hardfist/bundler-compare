@@ -1,24 +1,7 @@
 const path = require('path');
 const htmlPlugin = require('@rspack/plugin-html').default;
-const { transform } = require('@svgr/core');
 
-async function svgLoader(content) {
-  const callback = this.async();
-  const filePath = this.resourcePath;
 
-  transform(
-    content,
-    {},
-    {
-      filePath,
-      caller: {
-        previousExport: null,
-      },
-    },
-  ).then((componentCode) => {
-    callback(null, componentCode);
-  });
-}
 
 const isProd = process.env.NODE_ENV === 'production';
 const mode = isProd ? 'production' : 'development';
@@ -76,7 +59,7 @@ module.exports = {
         use: [{ loader: require.resolve('less-loader') }],
         type: 'css/module', // native css module
       },
-      { test: /\.svg$/, use: [{ loader: svgLoader }], type: 'jsx' },
+      { test: /\.svg$/, use: [{ loader: require.resolve('./svg-loader.js') }], type: 'jsx' },
     ],
   },
   resolve: { alias: { '@': path.resolve(__dirname, 'src'), bizchars: require.resolve('bizcharts/es/index.js') } },

@@ -1,11 +1,9 @@
 const path = require('path');
 const htmlPlugin = require('@rspack/plugin-html').default;
-
-
-
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const isProd = process.env.NODE_ENV === 'production';
 const mode = isProd ? 'production' : 'development';
-
+const ana = process.env.ANA === 'true';
 /**
  * @type {import('@rspack/cli').Configuration}
  */
@@ -19,7 +17,7 @@ module.exports = {
   plugins: [new htmlPlugin({
     template: './index.html',
     publicPath: '/'
-  })], // use js html-plugin here, or use rust html-plugin below
+  }), ana && new BundleAnalyzerPlugin()].filter(Boolean), // use js html-plugin here, or use rust html-plugin below
   builtins: {
     minify: isProd,
     // html: [

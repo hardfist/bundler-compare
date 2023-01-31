@@ -343,6 +343,7 @@ importers:
       redux: ^4.1.2
       regenerator-runtime: 0.13.9
       typescript: ^4.5.5
+      webpack-bundle-analyzer: 4.7.0
     dependencies:
       '@antv/data-set': 0.11.8
       '@arco-design/color': 0.4.0
@@ -377,6 +378,7 @@ importers:
       less-loader: 10.2.0
       postcss: 8.4.18
       typescript: 4.8.4
+      webpack-bundle-analyzer: 4.7.0
 
   vite:
     specifiers:
@@ -17428,6 +17430,25 @@ packages:
 
   /webpack-bundle-analyzer/4.6.1:
     resolution: {integrity: sha512-oKz9Oz9j3rUciLNfpGFjOb49/jEpXNmWdVH8Ls//zNcnLlQdTGXQQMsBbb/gR7Zl8WNLxVCq+0Hqbx3zv6twBw==}
+    engines: {node: '>= 10.13.0'}
+    hasBin: true
+    dependencies:
+      acorn: 8.8.1
+      acorn-walk: 8.2.0
+      chalk: 4.1.2
+      commander: 7.2.0
+      gzip-size: 6.0.0
+      lodash: 4.17.21
+      opener: 1.5.2
+      sirv: 1.0.19
+      ws: 7.5.9
+    transitivePeerDependencies:
+      - bufferutil
+      - utf-8-validate
+    dev: true
+
+  /webpack-bundle-analyzer/4.7.0:
+    resolution: {integrity: sha512-j9b8ynpJS4K+zfO5GGwsAcQX4ZHpWV+yRiHDiL+bE0XHJ8NiPYLTNVQdlFYWxtpg9lfAQNlwJg16J9AJtFSXRg==}
     engines: {node: '>= 10.13.0'}
     hasBin: true
     dependencies:

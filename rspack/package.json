@@ -42,7 +42,8 @@
     "@svgr/core": "6.5.1",
     "postcss": "8.4.18",
     "less-loader": "10.2.0",
-    "@swc/helpers": "^0.4.12"
+    "@swc/helpers": "^0.4.12",
+    "webpack-bundle-analyzer": "4.7.0"
   },
   "browserslist": [
     "> 0.01%",
